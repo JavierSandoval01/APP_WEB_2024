@@ -1,0 +1,2 @@
+HTML (HYPER TEXT MARKUP LANGUAGE) es el lenguaje estandar utilizado para crear y estructurar paginas web. 
+no es un lenguaje de programacion , sino un lenguaje de marcado.
