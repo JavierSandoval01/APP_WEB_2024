@@ -6,41 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <script src="operaciones.js" type="text/JavaScript"></script>
-    =
     <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
-    <div class="contenedor">
-        <header>
-
-        </header>
-        <div class="separador"></div>
-        <section>
-            <article class="caja1">
-                <h1>.: Calculadora basica:.</h1>
-                <hr>
-            </article>
-            <article class="caja2">
-                <form action="">
-                    <label for="num1">Numero 1:</label>
-                    <input class="inp1" type="number" id="n1" autofocus><br>
-                    <label for="num2">Numero 2:</label>
-                    <input class="inp1"  type="number" id="n2"><br>
-                    <Label>Tipo de operacion</Label>
-                    <select id="tipo">
-                        <option value="+" selected>SUMA</option>
-                        <option value="-">RESTA</option>
-                        <option value="*">Multiplicacion</option>
-                        <option value="/">Division</option>
-                    </select><br>
-                    <input class="boton" type="button" onclick="operacion()" value="Calcular">
-                    <hr>
-                </form>
-                <div id="resultado"></div>
-            </article>
-        </section>
+    <div id="contenedor">
+        <h2>.:Calculadora Básica:.</h2>
+        <hr>
+        <form>
+            <label for="n1">Número 1:</label>
+            <input class="caja1" type="number" id="n1" autofocus=""><br>
+            <label for="n2">Número 2:</label>
+            <input class="caja1" type="number" id="n2"><br>
+            <label for="tipo">Tipo de Operación:</label>
+            <select id="tipo">
+                <option value="+" selected="">Suma</option>
+                <option value="-">Resta</option>
+                <option value="*">Multiplicación</option>
+                <option value="/">División</option>
+            </select><br>
+            <input id="btn" type="button" value="Calcular" onclick="operacion()">
+        </form>
+        <hr>
+        <div id="resultado"></div>
     </div>
+    <img class="goku" src="goku2.jpg" height="250px" width="220px">
+    <script src="operaciones.js" type="text/JavaScript"></script>
+
 </body>
 
 </html>
