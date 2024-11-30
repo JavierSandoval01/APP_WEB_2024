@@ -39,7 +39,7 @@ header{
 
 #logotipo img{
    display: block;
-   width: 120px;
+   width: 80px;
    float: left;
    margin-top: 20px;
 }
@@ -175,7 +175,7 @@ nav > ul > li:hover > ul li:hover a{
 }
 
 .box .image{
-   width: 45%;
+   width: 15%;
    float: left;
    margin-right: 40px;
 

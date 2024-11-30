@@ -21,10 +21,21 @@ from mainapp import views
 
 from django.conf.urls import handler404
 
+from django.conf import settings
+
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('mainapp.urls')),
+    path('',include('articulos.urls')),
 ]
 
 handler404=views.redirigir_inicio
+
+
+#ruta imagenes
+if settings.DEBUG:
+    from django.conf.urls.static import static
+    urlpatterns +=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

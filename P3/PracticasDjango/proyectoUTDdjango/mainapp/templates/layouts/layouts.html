@@ -12,16 +12,35 @@
 <body>
     <header>
         <div id="logotipo">
-            <img src="{% static "img/logo_django.png" %}" alt="Imagen Django" title="Django">
+            <img src="{% static "img/django-badge.png" %}" alt="Imagen Django" title="Django">
             <h1>Django Proyecto Web</h1>
         </div>
     </header>
     <nav>
         <ul>
             <li><a href="{% url "inicio" %}" >Inicio</a></li>
+        {% if user.email %}
             <li><a href="{% url "mision" %}">mision</a></li>
             <li><a href="{% url "vision" %}">vision</a></li>
             <li><a href="{% url "acercade" %}">Acerca de</a></li>
+            <li><a href="{% url "listado_articulos" %}">Articulos</a></li>
+            <li><a href="{% url "listado_categorias" %}">categorias</a></li>
+            <li><a href="{% url "logout" %}">Cerrar sesion</a></li>
+        
+        {% else %}
+            <li><a href="{% url "registrarse" %}">Registrarse</a></li>
+            <li><a href="{% url "iniciar_sesion" %}">Iniciar sesion</a></li>
+            
+            
+            
+        
+        {% endif %}
+            
+            
+            
+            
+            
+            
         </ul>
     </nav>
     <section id="content">
